@@ -1,3 +1,6 @@
+
+Live link: https://lmfsabaricos.github.io/Anime-Page/
+
 <img src="assets/images/louis.png" alt="Louis" width="225" height="150"><h1 align="center">Anime Arena</h1>
 <p align="center"><a href="#project-description">Project Description</a> - <a href="#key-features">Key Features</a> - <a href="#technology-stack">Tech Stack</a></p>
 
