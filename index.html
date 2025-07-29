@@ -47,7 +47,7 @@
       <div class="gojo-container">
       <div class="strongest-box">
         <h2 class="section-title">The Strongest</h2>
-        <img class="gojo2" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/01/infinity-entry-image.jpg" alt="Gojo Satoru" loading="lazy">>
+        <img class="gojo2" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/01/infinity-entry-image.jpg" alt="Gojo Satoru" loading="lazy">
         <h3 class="gojo">Gojo Satoru</h3>
         <p class="gojo-quote">“Throughout heaven and earth, I alone am the honored one”</p>
         <h4 class="gojo-techniques">Gojo's Cursed Techniques</h4>
@@ -183,7 +183,7 @@
 <section class="quiz-section fade-in-scroll">
   <h2 class="trivia-title">🧠 Trivia Mode: Gojo vs Sukuna</h2>
   <div id="quiz-container">
-    <div id="quiz-question" aria-live="polite">>Loading...</div>
+    <div id="quiz-question" aria-live="polite">Loading...</div>
     <div id="quiz-choices"></div>
     <button id="next-question-btn">Next Question</button>
     <div id="quiz-score" class="hidden" aria-live="polite"></div>
@@ -684,6 +684,40 @@
 </section>
 </section>
 
+<!-- ========== DEBATE COMMENT SECTION ========== -->
+<section class="debate-section fade-in-scroll">
+  <h2>💬 Live Comments</h2>
+  <form id="debateForm">
+    <div id="identityFields">
+      <div class="profile-pic-preview">
+  <img id="preview-pic" class="debate-profile-pic" style="display: none;" alt="" aria-hidden="true">
+</div>
+<label>Upload Profile Picture:
+  <input type="file" id="profile-pic" accept="image/*" />
+</label>
+      <label>Name:
+        <input type="text" id="name" required />
+      </label>
+    </div>
+
+    <label>Comment:
+ <textarea id="comment" placeholder="Real-time chat coming soon! For now it's just interactive and save in local storage! Try posting :P" required></textarea>
+    </label>
+
+    <button type="submit">Post</button>
+    <button type="button" id="changeIdentityBtn" class="hidden">Change Identity</button>
+  </form>
+
+  <div id="debateComments" role="region" aria-label="User Debate Comments"></div>
+</section>
+
+<!-- ========== CLEAR DEBATE COMMENT LOCAL STORAGE BUTTON ========== -->
+<div style="text-align: right; margin-top: 1rem;">
+  <button id="clearCommentsBtn" style="background-color: #ff4d6d; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer;">
+    🗑️ Clear Comments (Local Storage)
+  </button>
+</div>
+
 <!-- ========== GOKU SUPERMAN BATTLE SECTION ========== -->
 <section class="battle-section fade-in-scroll" id="goku-superman-battle-container" aria-labelledy="goku-superman-heading">
   <h2 id="goku-superman-heading">Goku vs Superman: Battle!</h2>
@@ -710,19 +744,6 @@
   <button id="goku-superman-restart" onclick="restartGokuSupermanBattle()" class="hidden" aria-label="Restart Goku vs Superman Battle">
   Restart Battle
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </main>
 
@@ -767,6 +788,21 @@
 <script src="js/comments.js"></script>
 <script src="js/music.js"></script>
 <script src="js/main.js"></script>
+
+
+<!-- ========== FOOTER ========== -->
+<footer style="text-align: center; padding: 2rem 1rem; background-color: #1a1a2e; color: #ffffff;">
+  <p>Made with ❤️ by Louis Miguel Sabaricos</p>
+  <p>
+    <a href="https://github.com/lmfsabaricos/Anime-Page" target="_blank" style="color: #00f0ff; text-decoration: none;">
+      View Project on GitHub
+    </a>
+  </p>
+  <p style="font-size: 0.9rem; color: #cccccc;">
+    Anime Arena 😉✨
+  </p>
+</footer>
+
 
 </body>
 </html>
